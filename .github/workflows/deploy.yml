@@ -28,7 +28,7 @@ jobs:
       - name: Upload static files
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "."  # Path to your index.html and assets
+          path: "."  # Make sure index.html is in the root
 
   deploy:
     needs: build
